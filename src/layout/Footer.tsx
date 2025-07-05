@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-content">
+        {/* <div className="footer-content">
           <div className="footer-section">
             <h3>Easy English</h3>
             <p>हिंदी भाषियों के लिए बनाया गया सबसे बेहतरीन अंग्रेजी सीखने का प्लेटफॉर्म</p>
@@ -45,7 +45,7 @@ const Footer = () => {
               <li><a href="#terms">उपयोग की शर्तें</a></li>
             </ul>
           </div>
-        </div>
+        </div> */}
         
         <div className="footer-bottom">
           <div className="footer-divider"></div>

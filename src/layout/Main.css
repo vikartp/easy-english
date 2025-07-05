@@ -5,18 +5,18 @@
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  /* margin: 0 auto;
+  padding: 0 0; */
 }
 
 /* Hero Section */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 1rem;
   align-items: center;
-  min-height: 80vh;
-  padding: 4rem 2rem;
+  min-height: 25vh;
+  padding: 1rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -173,7 +173,7 @@
 
 /* Features Section */
 .features {
-  padding: 6rem 0;
+  padding: 1rem 0;
   background: var(--section-bg);
 }
 
@@ -193,7 +193,7 @@
 
 .feature-card {
   background: var(--card-bg);
-  padding: 2.5rem;
+  /* padding: 1rem; */
   border-radius: 20px;
   text-align: center;
   border: 1px solid var(--border-color);
@@ -283,7 +283,7 @@
   .hero {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem 1rem;
+    /* padding: 1rem 1rem; */
     text-align: center;
   }
   
@@ -323,7 +323,7 @@
   }
   
   .feature-card {
-    padding: 2rem;
+    /* padding: 2rem; */
   }
   
   .cta-content h2 {
