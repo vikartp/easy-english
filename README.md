@@ -1,53 +1,86 @@
-# React + TypeScript + Vite
+# Easy English - हिंदी से अंग्रेजी सीखें
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, mobile-first English learning platform designed specifically for Hindi speakers. Built with React, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔊 **Pronunciation Guide**: Interactive reading with audio pronunciation
+- 📝 **Essays & Stories**: Clickable content with Hindi translations
+- 🌙 **Dark/Light Theme**: Toggle between themes for comfortable reading
+- 📱 **Mobile Optimized**: Designed with mobile users in mind
+- 🎯 **Interactive Learning**: Click on words to see Hindi meanings
+- 🔄 **Sticky Navigation**: Always accessible navbar and footer
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 19+ with TypeScript
+- **Styling**: Tailwind CSS for mobile-first responsive design
+- **Build Tool**: Vite for fast development and builds
+- **Routing**: React Router DOM for navigation
+- **State Management**: React hooks and context
+- **Icons**: Emoji-based icons for universal compatibility
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd easy-english
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies**
+```bash
+npm install
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. **Start development server**
+```bash
+npm run dev
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
+4. **Build for production**
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/        # Reusable UI components
+├── constants/         # Static data (essays, stories, translations)
+├── hooks/            # Custom React hooks (theme, etc.)
+├── layout/           # Layout components (Navbar, Footer, Main)
+├── pages/            # Page components
+├── utils/            # Utility functions (speech, etc.)
+└── App.tsx           # Main application component
+```
+
+## Mobile-First Design
+
+This application is optimized for mobile devices with:
+- Reduced padding and spacing for smaller screens
+- Touch-friendly interactive elements
+- Responsive navigation with hamburger menu
+- Optimized font sizes and layouts
+- Sticky navigation for better UX
+
+## Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+### Technologies Used
+
+- React 19 with TypeScript for type safety
+- Tailwind CSS for utility-first styling
+- React Router DOM for client-side routing
+- React Toastify for notifications
+- Web Speech API for text-to-speech functionality
   {
     files: ['**/*.{ts,tsx}'],
     extends: [

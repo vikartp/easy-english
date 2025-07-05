@@ -1,13 +1,4 @@
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: all 0.3s ease;
-}
-
-/* Remove old styles and keep only what's needed */
+/* Keeping only essential styles that work with Tailwind */
 .logo {
   height: 6em;
   padding: 1.5em;
